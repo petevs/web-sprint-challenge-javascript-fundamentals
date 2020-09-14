@@ -17,7 +17,7 @@ myFunction();
 
 // Explanation:
 
-// The nested function creates a closure and references the variable create in the parent function. This is function level scope. Functions can access variables outside their scope but you cannot reach into the function to access the functions variables. The internal variable is created outside the scope of nested function and therfore nested function can reference it.
+// Functions can access variables outside of their scope. nestedFunction creates closue and references the "internal" variable, which is outside of its scope. It is a one way street, we can reach outside but other functions cannot reach inside. For example, in this case, we wouldn't be able to access the internal variable from outside of myFunction.
 
 /* Task 2: Counter */
 
